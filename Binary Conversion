@@ -1,4 +1,4 @@
-/* Huzefa Aftab 1001631353 */ 
+/* Huzefa Aftab */ 
 #include <stdio.h>
 void ConvertDecimalToBinary(int user,int array[]){
 	int n,i;
