@@ -1,0 +1,40 @@
+/* Huzefa Aftab 1001631353 */ 
+#include <stdio.h>
+void ConvertDecimalToBinary(int user,int array[]){
+	int n,i;
+    n=0;
+	while(user>0)
+	{
+		array[n]=user&1;
+		user =user>>1;
+		n++;
+	}
+	
+}
+void PrintBinary(int array[]){
+	int i;
+for(i=7;i>=0;i--)
+		printf("%d",array[i]);
+}
+
+int main(void){
+ printf("Decimal to binary convertor\n");
+ int number;
+ int array[8]={0};
+ printf("Please enter a decimal number between 0 and 255 ");
+ scanf("%d",&number);
+while (number >255 | number<0 ){
+    printf("You entered a number not between 0 and 255\n");
+	printf("Please enter a decimal number between 0 and 255 ");
+	scanf("%d",&number);
+    }
+	printf("Decimal %d converts binary ",number);
+ConvertDecimalToBinary(number,array);
+PrintBinary(array);
+printf("\n");
+
+ 
+ 
+return 0;
+}
+
